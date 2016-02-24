@@ -21,7 +21,7 @@
   </div>
 
   <div class="col-xs-12">
-    <% @course.sections.each do |section| %>
+    <% @course.sections.order('id ASC').each do |section| %>
       <br /><br />
       <div class="section">
         <h3>
