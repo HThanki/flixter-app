@@ -43,7 +43,6 @@ class Instructor::SectionsController < ApplicationController
     else
       current_section.course
     end
-
   end
 
   def section_params
