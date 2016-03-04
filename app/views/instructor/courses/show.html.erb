@@ -13,7 +13,11 @@
   });
   
   $(function () {
-    $('.sections').sortable({});
+    $('.sections').sortable({
+       update: function( event, ui ) {
+          alert(ui.item.index());
+      }
+    });
   });
 
 </script>
